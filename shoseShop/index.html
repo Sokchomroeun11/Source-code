@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="img" href="/img/c&r-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24e96a7dd0.js" crossorigin="anonymous"></script>
+    
+    <title>C&R BoostShop</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="main-container">
+                
+                <a href="#">
+                    <img src="/img/c&r-logo.png" alt="icon-logo" id="icon-logo">
+                    <h1>C&R BoostShop</h1>
+                </a>
+                <ul class="menu-shop">
+                    <li><a href="#">Home <i class="fa-solid fa-house"></i></a></li>
+                    <li><a a href="#">About <i class="fa-solid fa-address-card"></i></a></li>
+                    <li><a a href="#">Contact <i class="fa-solid fa-address-book"></i></a></li>
+                    <li><a a href="#">Images <i class="fa-solid fa-image"></i></a></li>
+                    <li><a a href="#">Location <i class="fa-solid fa-location-dot"></i></a></li>
+                    <li><a a href="#">Shop <i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a a href="#">Window <i class="fa-brands fa-windows"></i></i></a></li>
+                </ul>
+                <input type="search"placeholder="Search.........."><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div class="hero-body">
+            <div class="hero">
+                <div class="hero-left">
+                    <h1 id="text">WECOME TO C&R <br>BOOST STOR</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus consequatur optio aut atque consectetur ipsam ea rem itaque quos, eius quae ex necessitatibus? Iusto nesciunt esse perspiciatis facilis delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste vero sunt sed, dolorum mollitia architecto sapiente voluptatem similique error a nemo tempora ipsam consectetur quasi harum cum obcaecati quod.</p>
+                   <button id="view-all">VIEW ALL PRODUCT </button>
+                </div>
+
+                <div class="hero-right">
+                    <img src="/img/shose1.png" alt="shose1" id="shose">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer-img">
+            <ul>
+                <li><img src="/img/shose1.png" onclick="imgSlider('/img/shose1.png'); changeColor('#ffff')";></li>
+                <li><img src="/img/shose2.png" onclick="imgSlider('/img/shose2.png'); changeColor('#f542ce')";></li>
+                <li><img src="/img/shose3.png" onclick="imgSlider('/img/shose3.png'); changeColor('#12c4b0')";></li>
+                <li><img src="/img/shose4.png" onclick="imgSlider('/img/shose4.png'); changeColor('#734a11')";></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="main-footer">
+        <div class="footer-icon">
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="3"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-telegram"></i></i></a></li>
+        </div>
+        <p id="text-footer">@chamrouen1122</p>
+    </section>
+</body>
+</html>
+
+<script>
+    function imgSlider(someThing){
+        document.querySelector('#shose').src = someThing;
+    }
+    function changeColor(color){
+    const sec = document.querySelector('body');
+    sec.style.background = color;
+}
+</script>
